@@ -1,5 +1,5 @@
 {
-  "name": "sonner",
+  "name": "third-party-library",
   "version": "0.3.5",
   "description": "An opinionated toast component for React.",
   "main": "dist/index.js",
@@ -12,9 +12,7 @@
     "build": "tsup src/index.tsx",
     "dev": "tsup src/index.tsx --watch",
     "dev:website": "turbo run dev --filter=website...",
-    "dev:test": "turbo run dev --filter=test...",
-    "format": "prettier --write .",
-    "test": "playwright test"
+    "format": "prettier --write ."
   },
   "keywords": [
     "react",
@@ -25,16 +23,15 @@
   ],
   "author": "Emil Kowalski <e@emilkowal.ski>",
   "license": "MIT",
-  "homepage": "https://sonner.emilkowal.ski/",
+  "homepage": "https://third-party-library.emilkowal.ski/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emilkowalski/sonner.git"
+    "url": "git+https://github.com/emilkowalski/third-party-library.git"
   },
   "bugs": {
-    "url": "https://github.com/emilkowalski/sonner/issues"
+    "url": "https://github.com/emilkowalski/third-party-library/issues"
   },
   "devDependencies": {
-    "@playwright/test": "^1.30.0",
     "@types/node": "^18.11.13",
     "@types/react": "^18.0.26",
     "prettier": "^2.8.4",
@@ -48,5 +45,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
-  "packageManager": "pnpm@6.32.11"
+  "packageManager": "pnpm@6.32.11",
+  "dependencies": {
+    "sonner": "^0.3.5"
+  }
 }
