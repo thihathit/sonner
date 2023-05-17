@@ -1,6 +1,7 @@
 import { toast } from 'sonner';
 
 import styles from './hero.module.css';
+import { toast as toast2 } from '@/toast';
 
 export const Hero = () => {
   return (
@@ -23,6 +24,17 @@ export const Hero = () => {
           className={styles.button}
         >
           Render a toast
+        </button>
+        <button
+          data-primary=""
+          onClick={() => {
+            toast2('Sonner 2', {
+              description: 'An opinionated toast component for React.',
+            });
+          }}
+          className={styles.button}
+        >
+          Render a toast 2
         </button>
         <a className={styles.button} href="https://github.com/emilkowalski/sonner" target="_blank">
           GitHub

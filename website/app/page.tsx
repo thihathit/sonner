@@ -12,6 +12,7 @@ import { Position } from '@/src/components/Position';
 import { Usage } from '@/src/components/Usage';
 import { Advanced } from '@/src/components/Advanced';
 import { Other } from '@/src/components/Other/Other';
+import { Toaster as Toaster2 } from '@/toast';
 
 export default function Home() {
   const [expand, setExpand] = React.useState(false);
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <>
       <Toaster richColors={richColors} closeButton={closeButton} expand={expand} position={position} />
+      <Toaster2 richColors={richColors} closeButton={closeButton} expand={expand} position={'bottom-left'} />
       <main className="container">
         <Hero />
         <div className="content">
